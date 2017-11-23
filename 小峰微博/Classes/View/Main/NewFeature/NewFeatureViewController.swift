@@ -31,7 +31,7 @@ class NewFeatureViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView!.register(UICollectionViewCell.self,forCellWithReuseIdentifier:WBNewFeatureViewCellId)
+        self.collectionView!.register(NewFeatureCell.self,forCellWithReuseIdentifier:WBNewFeatureViewCellId)
     }
     
     override func didReceiveMemoryWarning() {
@@ -45,7 +45,7 @@ class NewFeatureViewController: UICollectionViewController {
     override func collectionView(_ collectionView:UICollectionView,numberOfItemsInSection section:Int) -> Int{
         return WBNewFeatureImageCount
     }
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath/*单元格在集合视图中的位置*/) -> UICollectionViewCell {
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WBNewFeatureViewCellId, for: indexPath) as! NewFeatureCell
         // Configure the cell
         //cell.backgroundColor=indexPath.item % 2 == 0 ? UIColor.red:UIColor.green
@@ -63,7 +63,7 @@ class NewFeatureViewController: UICollectionViewController {
     }
     
 }
-class NewFeatureCell:UICollectionViewCell{
+private class NewFeatureCell:UICollectionViewCell{
     public lazy var iconView:UIImageView = UIImageView()
     public lazy var startButton:UIButton = UIButton(title:"开始体验",color:UIColor.white,imageName:"new_feature_finish_button")
     override init(frame:CGRect){

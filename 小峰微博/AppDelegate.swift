@@ -16,8 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        window?.rootViewController = NewFeatureViewController()
-        //window?.backgroundColor = UIColor.white
+        //window?.rootViewController = MainViewController()
+        //window?.rootViewController = NewFeatureViewController()
+        window?.rootViewController = WelcomeViewController()
+        window?.backgroundColor = UIColor.white
         return true
     }
 
