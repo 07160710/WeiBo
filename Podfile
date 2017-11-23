@@ -7,6 +7,6 @@ target '小峰微博' do
 
 pod 'AFNetworking'
 pod 'SnapKit','~>3.0.0'
-
+pod 'SDWebImage'
 
 end

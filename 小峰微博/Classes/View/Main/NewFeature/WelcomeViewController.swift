@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import SDWebImage
 
 class WelcomeViewController: UIViewController {
     override func loadView() {
