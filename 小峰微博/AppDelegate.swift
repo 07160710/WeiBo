@@ -21,7 +21,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //window?.rootViewController = WelcomeViewController()
         window?.rootViewController = defaultRootViewController
         window?.backgroundColor = UIColor.white
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: WBSwithRootViewControllerNotification), object: nil, queue: nil){
+            [weak self] (Notification) -> Void in
+            //self?.window?.rootViewController = MainViewController()
+            let vc = Notification.object != nil ? WelcomeViewController() : MainViewController()
+            self?.window?.rootViewController = vc
+        }
+       
         return true
+    }
+    deinit{
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: WBSwithRootViewControllerNotification), object: nil)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

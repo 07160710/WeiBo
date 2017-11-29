@@ -57,10 +57,14 @@ extension OAuthViewController:UIWebViewDelegate
             if isSuccessed
             {
                 print("成功了")
+                self.dismiss(animated: false){
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: WBSwithRootViewControllerNotification), object: nil)
+                }
                 print(UserAccountViewModel.sharedUserAccount.account)
             }
             else
             {
+                return
                 print("失败了")
             }
         }

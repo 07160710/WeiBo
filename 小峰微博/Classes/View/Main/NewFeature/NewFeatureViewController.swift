@@ -100,7 +100,7 @@ private class NewFeatureCell:UICollectionViewCell{
     }
     @objc
     public func clickStartButton(){
-        print("开始体验")
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: WBSwithRootViewControllerNotification), object: nil)
     }
     
 }
