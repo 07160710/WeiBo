@@ -34,7 +34,7 @@ class WelcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        iconView.sd_setImage(with: UserAccountViewModel.sharedUserAccount.avatarUrl as URL,placeholderImage:UIImage(named:"avatar_default_blg"))
         // Do any additional setup after loading the view.
     }
 

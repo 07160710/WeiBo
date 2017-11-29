@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         //window?.rootViewController = MainViewController()
         //window?.rootViewController = NewFeatureViewController()
-        window?.rootViewController = WelcomeViewController()
+        //window?.rootViewController = WelcomeViewController()
+        window?.rootViewController = defaultRootViewController
         window?.backgroundColor = UIColor.white
         return true
     }
@@ -45,6 +46,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+}
+extension AppDelegate{
+    public var isNewVersion:Bool{
+        let currentVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
+        let version=Double(currentVersion)
+        print("当前版本\(version)")
+        let sandboxVersionKey="sandboxVersionKey"
+        let sandboxVersion=UserDefaults.standard.double(forKey: sandboxVersionKey)
+        print("之前版本\(sandboxVersion)")
+        UserDefaults.standard.set(version, forKey: sandboxVersionKey)
+        return (version)! > sandboxVersion
+    }
+    public var defaultRootViewController:UIViewController{
+        if UserAccountViewModel.sharedUserAccount.userLogin{
+            return isNewVersion ? NewFeatureViewController() : WelcomeViewController()
+        }
+        return MainViewController()
+    }
 }
 

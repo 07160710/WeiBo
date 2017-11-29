@@ -9,6 +9,10 @@
 import UIKit
 
 class UserAccountViewModel{
+    var avatarUrl:NSURL{
+        //return NSURL(String:account?.avatar_large ?? "")
+        return NSURL(string:account?.avatar_large ?? "")!
+    }
     
     var account:UserAccount?
     public var accountPath:String
