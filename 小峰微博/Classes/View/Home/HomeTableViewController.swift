@@ -12,7 +12,12 @@ class HomeTableViewController: VisitorTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        visitorView?.setupInfo(imageName: nil, title: "关注一些人，回这里看看有什么惊喜")
+        //visitorView?.setupInfo(imageName: nil, title: "关注一些人，回这里看看有什么惊喜")
+        if !UserAccountViewModel.sharedUserAccount.userLogin{
+            visitorView?.setupInfo(imageName: nil, title: "关注一些人，回这里看看有什么惊喜")
+            return
+        }
+        loadData()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -36,6 +41,17 @@ class HomeTableViewController: VisitorTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
+    }
+    public func loadData(){
+        NetworkTools.sharedTools.loadStatus{
+            (result,error) -> () in
+            if(error != nil){
+                print("错了")
+                return
+            }
+            print(result)
+        }
+        
     }
 
     /*

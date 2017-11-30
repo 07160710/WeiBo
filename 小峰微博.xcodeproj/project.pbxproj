@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		186551DD1F982AC800024FD0 /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186551DC1F982AC800024FD0 /* OAuthViewController.swift */; };
 		1873470A1FCE4052004F6E29 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187347091FCE4052004F6E29 /* Common.swift */; };
 		187950721FBD1CF100E8848D /* NewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187950711FBD1CF100E8848D /* NewFeatureViewController.swift */; };
 		1882AF381FAA9EDF00A1299B /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1882AF371FAA9EDF00A1299B /* UserAccount.swift */; };
 		188557CE1FC6509B00E44363 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188557CD1FC6509B00E44363 /* WelcomeViewController.swift */; };
 		188557D01FC6528F00E44363 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188557CF1FC6528F00E44363 /* UIImageView+Extension.swift */; };
 		188557D21FC6557A00E44363 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188557D11FC6557A00E44363 /* UILabel+Extension.swift */; };
+		18A454651FCF8D79001EA987 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A454641FCF8D79001EA987 /* Status.swift */; };
 		18A93A5C1FBBC58000BFDEEA /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A93A5B1FBBC58000BFDEEA /* NetworkTools.swift */; };
 		18A93A5E1FBBC62000BFDEEA /* UserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A93A5D1FBBC62000BFDEEA /* UserAccountViewModel.swift */; };
+		18FEC1551FCF979A006A8DD9 /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FEC1541FCF979A006A8DD9 /* OAuthViewController.swift */; };
 		3F0CCDA21F6F4C3F0099E5E5 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0CCDA11F6F4C3F0099E5E5 /* UIButton+Extension.swift */; };
 		3F8E79B51F68BCC200400DFB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E79B41F68BCC200400DFB /* MainViewController.swift */; };
 		3F8E79B71F68BD1F00400DFB /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E79B61F68BD1F00400DFB /* HomeTableViewController.swift */; };
@@ -52,15 +53,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		186551DC1F982AC800024FD0 /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
 		187347091FCE4052004F6E29 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		187950711FBD1CF100E8848D /* NewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFeatureViewController.swift; sourceTree = "<group>"; };
 		1882AF371FAA9EDF00A1299B /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		188557CD1FC6509B00E44363 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		188557CF1FC6528F00E44363 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		188557D11FC6557A00E44363 /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		18A454641FCF8D79001EA987 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		18A93A5B1FBBC58000BFDEEA /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		18A93A5D1FBBC62000BFDEEA /* UserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountViewModel.swift; sourceTree = "<group>"; };
+		18FEC1541FCF979A006A8DD9 /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
 		1B84AE48B50571DB99AD4CD4 /* Pods_____UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_____UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0CCDA11F6F4C3F0099E5E5 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		3F8E79B41F68BCC200400DFB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -115,14 +117,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		186551DB1F982A6700024FD0 /* OAuth */ = {
-			isa = PBXGroup;
-			children = (
-				186551DC1F982AC800024FD0 /* OAuthViewController.swift */,
-			);
-			name = OAuth;
-			sourceTree = "<group>";
-		};
 		18B01E211FBBD06900698EC7 /* NewFeature */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +124,14 @@
 				188557CD1FC6509B00E44363 /* WelcomeViewController.swift */,
 			);
 			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		18FEC1531FCF96C5006A8DD9 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				18FEC1541FCF979A006A8DD9 /* OAuthViewController.swift */,
+			);
+			path = OAuth;
 			sourceTree = "<group>";
 		};
 		3F0CCDA01F6F4C3F0099E5E5 /* Extension */ = {
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				1882AF371FAA9EDF00A1299B /* UserAccount.swift */,
+				18A454641FCF8D79001EA987 /* Status.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,7 +185,7 @@
 		3F8E79AD1F68BA2800400DFB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				186551DB1F982A6700024FD0 /* OAuth */,
+				18FEC1531FCF96C5006A8DD9 /* OAuth */,
 				3F8E79AE1F68BA2800400DFB /* Discover */,
 				3F8E79AF1F68BA2800400DFB /* Home */,
 				3F8E79B01F68BA2800400DFB /* Main */,
@@ -523,13 +526,14 @@
 				188557CE1FC6509B00E44363 /* WelcomeViewController.swift in Sources */,
 				3F8E79BD1F68BD7C00400DFB /* ProfileTableViewController.swift in Sources */,
 				3F8E79B71F68BD1F00400DFB /* HomeTableViewController.swift in Sources */,
+				18FEC1551FCF979A006A8DD9 /* OAuthViewController.swift in Sources */,
 				3F8E79B51F68BCC200400DFB /* MainViewController.swift in Sources */,
-				186551DD1F982AC800024FD0 /* OAuthViewController.swift in Sources */,
 				1882AF381FAA9EDF00A1299B /* UserAccount.swift in Sources */,
 				3F93A8FC1F60DEB1001FC6DF /* ViewController.swift in Sources */,
 				188557D21FC6557A00E44363 /* UILabel+Extension.swift in Sources */,
 				18A93A5E1FBBC62000BFDEEA /* UserAccountViewModel.swift in Sources */,
 				3F8E79B91F68BD3F00400DFB /* DiscoverTableViewController.swift in Sources */,
+				18A454651FCF8D79001EA987 /* Status.swift in Sources */,
 				3F0CCDA21F6F4C3F0099E5E5 /* UIButton+Extension.swift in Sources */,
 				3FF032931F71F961008DAB49 /* VisitorTableViewController.swift in Sources */,
 				3FF032951F71FBDD008DAB49 /* VisitorView.swift in Sources */,

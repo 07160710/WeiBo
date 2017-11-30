@@ -69,6 +69,18 @@ extension NetworkTools
     }
     
 }
+extension NetworkTools{
+    func loadStatus(finished:@escaping HMRequestCallBack){
+        guard let params = tokenDict else{
+            finished(nil,NSError(domain:"cn.itcast.error",code:-1001,userInfo:["message":"token为空"]))
+            return
+        }
+        //https://api.weibo.com/2/statuses/home_timeline.json
+        let urlString = "https://api.weibo.com/2/statuses/home_timeline.json"
+        request(method: .GET, URLString: urlString, parameters: params, finished: finished)
+    }
+}
+
 enum HMRequestMethod:String
 {
     case GET="GET"
