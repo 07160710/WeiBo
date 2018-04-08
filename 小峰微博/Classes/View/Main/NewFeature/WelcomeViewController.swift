@@ -50,7 +50,7 @@ class WelcomeViewController: UIViewController {
         iv.layer.masksToBounds = true
         return iv
     }()
-    public lazy var welcomeLabel:UILabel = UILabel(title:"欢迎回来,你这个傻逼",fontSize:18)
+    public lazy var welcomeLabel:UILabel = UILabel(title:"欢迎回来！！！",fontSize:18)
     
 
     /*

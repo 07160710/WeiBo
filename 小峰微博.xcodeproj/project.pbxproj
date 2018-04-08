@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1873470A1FCE4052004F6E29 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187347091FCE4052004F6E29 /* Common.swift */; };
 		187950721FBD1CF100E8848D /* NewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187950711FBD1CF100E8848D /* NewFeatureViewController.swift */; };
+		187A560C2079EEA400A9EC1C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A560B2079EEA400A9EC1C /* User.swift */; };
+		187A560E2079F12B00A9EC1C /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A560D2079F12B00A9EC1C /* StatusViewModel.swift */; };
+		187A56102079F1DD00A9EC1C /* StatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A560F2079F1DD00A9EC1C /* StatusListViewModel.swift */; };
 		1882AF381FAA9EDF00A1299B /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1882AF371FAA9EDF00A1299B /* UserAccount.swift */; };
 		188557CE1FC6509B00E44363 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188557CD1FC6509B00E44363 /* WelcomeViewController.swift */; };
 		188557D01FC6528F00E44363 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188557CF1FC6528F00E44363 /* UIImageView+Extension.swift */; };
@@ -55,6 +58,9 @@
 /* Begin PBXFileReference section */
 		187347091FCE4052004F6E29 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		187950711FBD1CF100E8848D /* NewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFeatureViewController.swift; sourceTree = "<group>"; };
+		187A560B2079EEA400A9EC1C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		187A560D2079F12B00A9EC1C /* StatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
+		187A560F2079F1DD00A9EC1C /* StatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusListViewModel.swift; sourceTree = "<group>"; };
 		1882AF371FAA9EDF00A1299B /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		188557CD1FC6509B00E44363 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		188557CF1FC6528F00E44363 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -168,6 +174,7 @@
 			children = (
 				1882AF371FAA9EDF00A1299B /* UserAccount.swift */,
 				18A454641FCF8D79001EA987 /* Status.swift */,
+				187A560B2079EEA400A9EC1C /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +248,8 @@
 			isa = PBXGroup;
 			children = (
 				18A93A5D1FBBC62000BFDEEA /* UserAccountViewModel.swift */,
+				187A560D2079F12B00A9EC1C /* StatusViewModel.swift */,
+				187A560F2079F1DD00A9EC1C /* StatusListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -535,13 +544,16 @@
 				3F8E79B91F68BD3F00400DFB /* DiscoverTableViewController.swift in Sources */,
 				18A454651FCF8D79001EA987 /* Status.swift in Sources */,
 				3F0CCDA21F6F4C3F0099E5E5 /* UIButton+Extension.swift in Sources */,
+				187A56102079F1DD00A9EC1C /* StatusListViewModel.swift in Sources */,
 				3FF032931F71F961008DAB49 /* VisitorTableViewController.swift in Sources */,
 				3FF032951F71FBDD008DAB49 /* VisitorView.swift in Sources */,
 				3F8E79BB1F68BD6000400DFB /* MessageTableViewController.swift in Sources */,
 				1873470A1FCE4052004F6E29 /* Common.swift in Sources */,
 				187950721FBD1CF100E8848D /* NewFeatureViewController.swift in Sources */,
+				187A560E2079F12B00A9EC1C /* StatusViewModel.swift in Sources */,
 				188557D01FC6528F00E44363 /* UIImageView+Extension.swift in Sources */,
 				3F93A8FA1F60DEB1001FC6DF /* AppDelegate.swift in Sources */,
+				187A560C2079EEA400A9EC1C /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
